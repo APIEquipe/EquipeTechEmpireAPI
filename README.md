@@ -1,3 +1,13 @@
+## Equipe
+- [Gabriel Henrique](https://github.com/GaSiqueira) / _Scrum Master_
+- [Gustavo Castilho](https://github.com/GustavoCastilhoLucena) / _Dev_
+- [Juan Santos](https://github.com/JuanSantosVale) / _Dev_
+- [Kaue Riki](https://github.com/kaueriki) / _Dev_
+- [Lucca Vilela](https://github.com/luccavilela) / _Dev_
+- [Miguel Conde](https://github.com/miguelcondesantos) / _Dev_
+- [Sarah Antunes](https://github.com/Amentine) / _Dev_
+- [Silmara Bittencourt](https://github.com/SBittencourt) / _Product Owner_
+
 ## Sobre o Projeto
 Projeto desenvolvido por alunos do 1º semestre do curso de Desenvolviento de Software Multiplatafora, da [Fatec São José dos Campos - Prof. Jessen Vidal.](https://fatecsjc-prd.azurewebsites.net/)
 Consiste na criação de uma aplicação web que permite a analise de dados sobre a covid longa nas cidades de cobertura da Vanguarda, a fim de entender o impacto desssa condição no sistema de saúde das maiores cidades do Vale do Paraíba.
@@ -8,6 +18,10 @@ A aplicação web permite a comparação dos dados de anos pré, durante e pós 
 A aplicação também deve permitir a identificação de possíveis fatores ligados à Covid-19 que possam explicar as variaçõews nos dados.
 
 ## MVP
+### Sprint 1
+_1- Wireframe (protótipo do site)_
+
+![▶ Page 1 - Wireframe - API - Google Chrome 2023-03-30 18-46-34](https://user-images.githubusercontent.com/106455775/228974604-628248d2-cc37-44b4-9167-3d0aa50c0845.gif)
 
 ## Backlogs
 
@@ -66,12 +80,3 @@ O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separa
 | 03 |   24/04/2023 - 14/05/2023 | Pendente :hourglass: | 
 | 04 |   15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
 
-## Equipe
-- [Gabriel Henrique](https://github.com/GaSiqueira) _Scrum Master_
-- [Gustavo Castilho](https://github.com/GustavoCastilhoLucena) _Dev_
-- [Juan Santos](https://github.com/JuanSantosVale) _Dev_
-- [Kaue Riki](https://github.com/kaueriki) _Dev_
-- [Lucca Vilela](https://github.com/luccavilela) _Dev_
-- [Miguel Conde](https://github.com/miguelcondesantos) _Dev_
-- [Sarah Antunes](https://github.com/Amentine) _Dev_
-- [Silmara Bittencourt](https://github.com/SBittencourt) _Product Owner_
