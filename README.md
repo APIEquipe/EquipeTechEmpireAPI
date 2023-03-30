@@ -11,7 +11,7 @@ A aplicação também deve permitir a identificação de possíveis fatores liga
 
 ## Backlogs
 
-### Backlog do Produtro
+### Backlog do Produto
 | User Story | Requisito | Funcionalidade | Sprint |
 | :--:       | :-----------:|:--------------:     |:--:    |
 | **01** | **RF01** | Conseguir gerar gráficos a partir dos dados da covid longa. | 0 |
