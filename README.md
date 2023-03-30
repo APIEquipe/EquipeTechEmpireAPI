@@ -61,7 +61,7 @@ O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separa
 
 | Sprint| Período | Status |
 |:-----:|:----------:|:---------:|
-| 01 |   13/02/2023 - 02/03/2023 | Pendente :hourglass: | 
+| 01 |   13/02/2023 - 02/04/2023 | Pendente :hourglass: | 
 | 02 |   03/04/2023 - 23/04/2023 | Pendente :hourglass: |  
 | 03 |   24/04/2023 - 14/05/2023 | Pendente :hourglass: | 
 | 04 |   15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
