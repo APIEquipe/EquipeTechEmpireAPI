@@ -44,12 +44,12 @@ _2- Gráfico da União com Combate à Covid-19 até 2022_
 | **01** | **RF01** | Pesquisa aprofundada a cerca da covid longa. | 2 |
 | **01** | **RF01** | Raspagem e tratamento de dados. Código para captura de dados a cerca da covid longa. | 2 |
 | **01** | **RF01** | Ferramenta para criação dos gráficos a partir dos dados coletados. | 3 |
-| **02** | **RF02** | Gráficos - Filtro para visualizar aumento e queda. | 3 |
-| **03** | **RF03** | Gráficos - Filtro para visualizar por tempo. | 3 |
-| **04** | **RF04** | Gráficos - Filtro por quantia de utilização | 3 |
-| **05** | **RF05** | Gráficos - Filtro por gastos. | 3 |
 | **09** | **RNF02** | Criação do banco de dados. | 3 |
 | **09** | **RNF02** | Conexão do BD com a ferramenta de criação de gráficos. | 3 |
+| **02** | **RF02** | Gráficos - Filtro para visualizar aumento e queda. | 4 |
+| **03** | **RF03** | Gráficos - Filtro para visualizar por tempo. | 4 |
+| **04** | **RF04** | Gráficos - Filtro por quantia de utilização. | 4 |
+| **05** | **RF05** | Gráficos - Filtro por gastos. | 4 |
 |  |  | Ajustes necessários. | 4 |
 | **10** | **RNF03** | Finalização da documentação e organização final do GitHub. | 4 |
 
@@ -90,4 +90,5 @@ O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separa
 | 03 |   24/04/2023 - 14/05/2023 | Pendente :hourglass: | 
 | 04 |   15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
 
-![entregas](https://user-images.githubusercontent.com/112987836/229304634-774d0b29-47bd-4574-92b0-2df5945b4516.jpg)
+![entregas](https://user-images.githubusercontent.com/112987836/229305550-77839d58-69f7-4c88-aa9a-767c0f04caef.jpg)
+
