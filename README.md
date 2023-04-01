@@ -18,11 +18,13 @@ O produto é voltado para profissionais da área de saúde, pesquisadores e púb
 
 ## MVP
 ### Sprint 1
-_1- Wireframe (protótipo do site)_
+_1- Wireframe (protótipo do site)_ 
+
+*Clique para acessar o protótipo-->* <a href="https://www.figma.com/proto/5Wl75NwGWAYsg8UyQOvK0P/Wireframe---API?node-id=16-46&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=16%3A46"> Wireframe </a>
 
 ![▶ Page 1 - Wireframe - API - Google Chrome 2023-03-30 18-46-34](https://user-images.githubusercontent.com/106455775/228974604-628248d2-cc37-44b4-9167-3d0aa50c0845.gif)
 
-_2- Gráfico da União com Combate à Covid-19 até 2022_
+_2- Gráfico de gastos da União com Combate à Covid-19 até 2022_
 
 ![image](https://user-images.githubusercontent.com/106455775/229213006-5886d729-5bdf-4f14-b640-384a91166805.png)
 
