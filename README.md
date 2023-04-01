@@ -14,7 +14,7 @@ Consiste na criação de uma aplicação web que permite a analise de dados sobr
 Back-end do projeto desenvolvido em Python3+ utilizando o microframework flask e o MySQL para gerenciar o banco de dados.
 
 ## Visão Geral
-O produto é voltado para profissionais da área de saúde, pesquisadores e público em geral interessado em entender o impacto da covid longa no sistema de saúde das maiores cidades do Vale do Paraíba, a aplicação web ajuda os usarios que desejam ter acesso a dados precisos e atualizados sobre a covid longa nas cidades da região, a fim de entender melhor essa condição e seu impacto na saúde pública. Ao contrário de outros sistemas que podem apresentar dados genéricos sobre a covid-19, esse se concentra especificamente na análise de dados da Covid Longa nas cidades de cobertura da Vanguarda, nosso produto elabora informações detalhadas sobre a Covid Longa nas cidades de cobertura da Vanguarda, incluindo dados sobre casos, hospitalizações, sintomas, tratamentos e outros aspectos relevantes para a compreensão da condição e seus efeitos no sistema de saúde da região. Com base nesses dados, o produto deve ajudar os usuários a entender melhor a Covid Longa e desenvolver estratégias para enfrentá-la de forma eficaz.
+O produto é voltado para profissionais da área de saúde, pesquisadores e público em geral interessado em entender o impacto da covid longa no sistema de saúde das maiores cidades do Vale do Paraíba, a aplicação web ajuda os usuários que desejam ter acesso a dados precisos e atualizados sobre a covid longa nas cidades da região, a fim de entender melhor essa condição e seu impacto na saúde pública. Ao contrário de outros sistemas que podem apresentar dados genéricos sobre a covid-19, esse se concentra especificamente na análise de dados da Covid Longa nas cidades de cobertura da Vanguarda, nosso produto elabora informações detalhadas sobre a Covid Longa nas cidades de cobertura da Vanguarda, incluindo dados sobre casos, hospitalizações, sintomas, tratamentos e outros aspectos relevantes para a compreensão da condição e seus efeitos no sistema de saúde da região. Com base nesses dados, o produto deve ajudar os usuários a entender melhor a Covid Longa e desenvolver estratégias para enfrentá-la de forma eficaz.
 
 ## MVP
 ### Sprint 1
@@ -69,7 +69,7 @@ _2- Gráfico da União com Combate à Covid-19 até 2022_
 #### Sprint 1
 | Item | Funcionalidade | Planning Poker |
 | :--: | :--------------: | :-------------: |
-|  01  | Levantamento de requesitos. | 8 |
+|  01  | Levantamento de requisitos. | 8 |
 |  02  | Criação do backlog do produto. | 5 |
 |  03  | Wireframe/Protótipo. | 5 |
 |  04  | Pesquisa prévia para a criação de gráficos. | 5 |
