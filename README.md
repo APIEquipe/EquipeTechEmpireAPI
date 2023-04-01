@@ -90,4 +90,4 @@ O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separa
 | 03 |   24/04/2023 - 14/05/2023 | Pendente :hourglass: | 
 | 04 |   15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
 
-![entrega](https://user-images.githubusercontent.com/112987836/229302617-3b0aa9ac-4b85-4538-a795-d7fa65f52691.png)
+![entregas](https://user-images.githubusercontent.com/112987836/229304634-774d0b29-47bd-4574-92b0-2df5945b4516.jpg)
