@@ -81,8 +81,7 @@ _2- Gráfico da União com Combate à Covid-19 até 2022_
 |  10  | Criação do Github. | 1 |
 
 ## Entregas
-<span id="entregas"></span>
-O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separadas em 4 entregas com sprints de 21 dias de duração cada uma. <br>
+O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separadas em 4 entregas com sprints de 21 dias de duração cada uma.
 
 | Sprint| Período | Status |
 |:-----:|:----------:|:---------:|
@@ -91,3 +90,4 @@ O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separa
 | 03 |   24/04/2023 - 14/05/2023 | Pendente :hourglass: | 
 | 04 |   15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
 
+![entrega](https://user-images.githubusercontent.com/112987836/229302617-3b0aa9ac-4b85-4538-a795-d7fa65f52691.png)
