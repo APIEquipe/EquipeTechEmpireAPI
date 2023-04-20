@@ -17,3 +17,7 @@ def gastos():
 @app.route("/sobre")
 def sobre():
     return render_template("sobre.html")
+
+@app.route("/graficos")
+def graficos():
+    return render_template("graficos.html") 
