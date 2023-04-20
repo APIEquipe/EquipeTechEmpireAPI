@@ -5,11 +5,52 @@
 {% block background %}<body class="fundo">{% endblock %}
 
 {% block conteudo %}
-
+ 
 <div class="Main">
+ <form class="form" name="form">
+    <fieldset>
+        <legend>Consultar</legend>
+        <h3>Filtros</h3>
+        <p>
+          <label for="processo">Processo:</label> <br>
+          <select id="processo" name="processo">
+             <option value="medicamento">Medicamentos</option>
+             <option value="consulta">Consultas Médicas</option>
+             <option value="gastos" selected>Gastos</option>
+          </select>
+        </p>
+        <p>
+          <label for="comparar">Critério de Comparação:</label> <br>
+          <select id="comparar" name="comparar">
+             <option value="totais">Totais</option>
+             <option value="aumento">Aumentos</option>
+             <option value="reducao">Reduções</option>
+          </select>
+        </p>
+        <p>
+          <label for="periodo">Periodo:</label> <br>
+          <input id="periodo" name="periodo" type="date" min="2019-01-01" max="2022-12-31">
+        </p>     
+        <p>
+          <label for="cidade">Cidade:</label> <br>
+          <select id="cidade" name="cidade">
+             <option value="sjc">São José dos Campos</option>
+             <option value="jacarei">Jacarei</option>
+             <option value="taubate">Taubate</option>
+          </select>
+        </p>
+        <p>
+          <button type="submit" name="aplicar" value="aplicar">Aplicar</button>
+          <button type="reset">Limpar</button>
+        </p>     
 
+
+    </fieldset>
+ </form>
 
 </div>
+
+
 
 {% endblock %}
 
