@@ -31,7 +31,7 @@ python -m pip install --upgrade pip
 
 4 passo - Instalação e inicialização do Flask:
 
-Para instalar o flask: pip install flask
+Para instalar o flask: pip install -r requirements.txt
 
 
 E então, caso tudo esteja certo, basta iniciar o programa:
