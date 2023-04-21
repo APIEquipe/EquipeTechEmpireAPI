@@ -16,22 +16,7 @@ Back-end do projeto desenvolvido em Python3+ utilizando o microframework flask e
 ## Visão Geral
 O produto é voltado para profissionais da área de saúde, pesquisadores e público em geral interessado em entender o impacto da covid longa no sistema de saúde das maiores cidades do Vale do Paraíba, a aplicação web ajuda os usuários que desejam ter acesso a dados precisos e atualizados sobre a covid longa nas cidades da região, a fim de entender melhor essa condição e seu impacto na saúde pública. Ao contrário de outros sistemas que podem apresentar dados genéricos sobre a covid-19, esse se concentra especificamente na análise de dados da Covid Longa nas cidades de cobertura da Vanguarda, nosso produto elabora informações detalhadas sobre a Covid Longa nas cidades de cobertura da Vanguarda, incluindo dados sobre casos, hospitalizações, sintomas, tratamentos e outros aspectos relevantes para a compreensão da condição e seus efeitos no sistema de saúde da região. Com base nesses dados, o produto deve ajudar os usuários a entender melhor a Covid Longa e desenvolver estratégias para enfrentá-la de forma eficaz.
 
-## MVP
-### Sprint 1
-_1- Wireframe (protótipo do site)_ 
-
-*Clique para acessar o protótipo-->* <a href="https://www.figma.com/proto/5Wl75NwGWAYsg8UyQOvK0P/Wireframe---API?node-id=16-46&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=16%3A46"> Wireframe </a>
-
-![▶ Page 1 - Wireframe - API - Google Chrome 2023-03-30 18-46-34](https://user-images.githubusercontent.com/106455775/228974604-628248d2-cc37-44b4-9167-3d0aa50c0845.gif)
-
-_2- Gráfico de gastos da União com Combate à Covid-19 até 2022_
-
-![image](https://user-images.githubusercontent.com/106455775/229213006-5886d729-5bdf-4f14-b640-384a91166805.png)
-
-
-## Backlogs
-
-### Backlog do Produto
+## Backlog do Produto
 | User Story | Requisito | Funcionalidade | Sprint |
 | :--:       | :-----------:|:--------------:     |:--:    |
 | **10** | **RNF03** | Levantamento de requisitos. | 1 |
@@ -55,7 +40,7 @@ _2- Gráfico de gastos da União com Combate à Covid-19 até 2022_
 |  |  | Ajustes necessários. | 4 |
 | **10** | **RNF03** | Finalização da documentação e organização final do GitHub. | 4 |
 
-### User Story
+## User Story
  ID | Quem? | Para |
 |:--------------:  | :----------:|:---------------------------------------------------------:|
 | **01** |   Jornalista   | Gostaria de saber os tipos de consultas, tratamentos, procedimentos e uso de medicamentos entre os anos de 2019 a 2022 para compara-los e obter conteúdo para a sua matéria. |
@@ -67,30 +52,15 @@ _2- Gráfico de gastos da União com Combate à Covid-19 até 2022_
 | **07** |   Jornalista   | Gostaria de uma interface com navegação intuitiva e responsiva para usar a aplicação. |
 | **08** |   Jornalista   | Gostaria que os dados estejam armazenados e organizados em um Banco de Dados para serem mais acessíveis. |
 
-### Backlog das Sprints
-#### Sprint 1
-| Item | Funcionalidade | Planning Poker |
-| :--: | :--------------: | :-------------: |
-|  01  | Levantamento de requisitos. | 8 |
-|  02  | Criação do backlog do produto. | 5 |
-|  03  | Wireframe/Protótipo. | 5 |
-|  04  | Pesquisa prévia para a criação de gráficos. | 5 |
-|  05  | Organização do Github | 5 |
-|  06  | Criação do burndown. | 5 |
-|  07  | Criação do backlog da sprint. | 3 |
-|  08  | Tornar o protótipo navegável. | 3 |
-|  09  | Criação de gráficos demonstrativos. | 3 |
-|  10  | Criação do Github. | 1 |
-
 ## Entregas
 O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separadas em 4 entregas com sprints de 21 dias de duração cada uma.
 
-| Sprint| Período | Status |
+| Links | Período | Status |
 |:-----:|:----------:|:---------:|
-| 01 |   13/02/2023 - 02/04/2023 | Pendente :hourglass: | 
-| 02 |   03/04/2023 - 23/04/2023 | Pendente :hourglass: |  
-| 03 |   24/04/2023 - 14/05/2023 | Pendente :hourglass: | 
-| 04 |   15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
+| Sprint 1 | 13/02/2023 - 02/04/2023 | Entregue :heavy_check_mark: | 
+| Sprint 2 | 03/04/2023 - 23/04/2023 | Pendente :hourglass: |  
+| Sprint 3 | 24/04/2023 - 14/05/2023 | Pendente :hourglass: | 
+| Sprint 4 | 15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
 
 ![entregas](https://user-images.githubusercontent.com/112987836/229305550-77839d58-69f7-4c88-aa9a-767c0f04caef.jpg)
 
