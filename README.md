@@ -57,7 +57,7 @@ O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separa
 
 | Links | Período | Status |
 |:-----:|:----------:|:---------:|
-| Sprint 1 | 13/02/2023 - 02/04/2023 | Entregue :heavy_check_mark: | 
+| [Sprint 1](https://github.com/APIEquipe/EquipeTechEmpireAPI/tree/sprint1) | 13/02/2023 - 02/04/2023 | Entregue :heavy_check_mark: | 
 | Sprint 2 | 03/04/2023 - 23/04/2023 | Pendente :hourglass: |  
 | Sprint 3 | 24/04/2023 - 14/05/2023 | Pendente :hourglass: | 
 | Sprint 4 | 15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
