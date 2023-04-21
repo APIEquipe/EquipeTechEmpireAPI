@@ -52,12 +52,12 @@ O produto é voltado para profissionais da área de saúde, pesquisadores e púb
 | **07** |   Jornalista   | Gostaria de uma interface com navegação intuitiva e responsiva para usar a aplicação. |
 | **08** |   Jornalista   | Gostaria que os dados estejam armazenados e organizados em um Banco de Dados para serem mais acessíveis. |
 
-## Entregas
+## Relatório de Entregas
 O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separadas em 4 entregas com sprints de 21 dias de duração cada uma.
 
 | Links | Período | Status |
 |:-----:|:----------:|:---------:|
-| [Sprint 1](https://github.com/APIEquipe/EquipeTechEmpireAPI/tree/sprint1) | 13/02/2023 - 02/04/2023 | Entregue :heavy_check_mark: | 
+| [Sprint 1](https://github.com/APIEquipe/EquipeTechEmpireAPI/blob/main/relatorios-sprint/sprint1.md#sprint-1) | 13/02/2023 - 02/04/2023 | Entregue :heavy_check_mark: | 
 | Sprint 2 | 03/04/2023 - 23/04/2023 | Pendente :hourglass: |  
 | Sprint 3 | 24/04/2023 - 14/05/2023 | Pendente :hourglass: | 
 | Sprint 4 | 15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
