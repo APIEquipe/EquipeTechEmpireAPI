@@ -48,7 +48,11 @@ nav, ul, li{
 }
 
 footer{
+    width: 100%;
+    height: auto;
     display: flex;
+    position: relative;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
@@ -91,4 +95,137 @@ footer{
     max-width: 80%;
     margin: 0 auto;
     padding-top: 25px;
+}
+
+/* consultar.hmtl */
+
+.flex_container {
+    width: 100%;
+    height: auto;
+}
+
+.flexbox_filtro {
+    position: relative;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    width: 330px;
+    height: 480px;
+    margin: 50px;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo-primario {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    color: #304E94;
+}
+
+#titulo-secundario {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #304E94;
+}
+
+#cidade {
+    width: 230px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    background: #dddddd;
+    border-radius: 13px;
+    color: #A7A7A7;
+}
+
+#processo {
+    width: 230px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    background: #dddddd;
+    border-radius: 13px;
+    color: #A7A7A7;
+}
+
+#comparar {
+    width: 230px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    background: #dddddd;
+    border-radius: 13px;
+    color: #A7A7A7;
+}
+
+#periodo {
+    width: 230px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    background: #dddddd;
+    border-radius: 13px;
+    color: #A7A7A7;
+}
+
+.filtro_botao {
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    border-radius: 13px;
+    flex-direction: row;      
+}
+
+#filtro_consultar_botao_aplicar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    background: #304E94;
+    color: white;
+    border-radius: 13px;
+    border: none;
+}
+
+#filtro_consultar_botao_limpar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    background: #6886CA;
+    color: white;
+    border-radius: 13px;
+    border: none;
+    flex-direction: row-reverse;
+}
+
+/* ---gastos.html--- */
+
+.container_gastos {
+    display: flex;
+    left: none;
+    right: 50px;
+    flex-direction: 
+        row-reverse;
 }
