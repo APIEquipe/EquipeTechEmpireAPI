@@ -29,7 +29,7 @@ O produto é voltado para profissionais da área de saúde, pesquisadores e púb
 | **07** | **RF07** | Criação da tela principal. | 2 |
 | **07** | **RF07** | Criação das telas de consulta e de gastos. | 2 |
 | **01** | **RF01** | Pesquisa aprofundada a cerca da covid longa. | 2 |
-| **01** | **RF01** | Raspagem e tratamento de dados. Código para captura de dados a cerca da covid longa. | 2 |
+| **01** | **RF01** | Raspagem e tratamento de dados. Código para captura de dados a cerca da covid longa. | 3 |
 | **01** | **RF01** | Ferramenta para criação dos gráficos a partir dos dados coletados. | 3 |
 | **09** | **RNF02** | Criação do banco de dados. | 3 |
 | **09** | **RNF02** | Conexão do BD com a ferramenta de criação de gráficos. | 3 |
