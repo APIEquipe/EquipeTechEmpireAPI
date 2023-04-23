@@ -46,4 +46,6 @@ Nesta tela é exibida ao usuário uma explicação descritiva sobre a covid-19 e
 Através do link abaixo é possível a visualização do protótipo referente à segunda entrega, conforme acordado em reunião com o cliente. Por ele é possível navegar pelas telas, entendendo o fluxo e função dos botões e menus.
 *Clique para acessar o protótipo-->* <a href="https://www.figma.com/file/rZNHxy0Y2YroAdpvJrnTCW/Novo-wireframe?node-id=0-1&t=NtriIn4teNayw0Re-0"> Wireframe </a>
 
-## Demonstração do Protótipo
+## Demonstração de Telas
+![Desktop 2023 04 23 - 02 34 57 03](https://user-images.githubusercontent.com/106455775/233843065-306d5a7f-db2f-4041-ad6e-6da1500deeb8.gif)
+
