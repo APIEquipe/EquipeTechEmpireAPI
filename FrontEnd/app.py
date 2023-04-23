@@ -21,3 +21,7 @@ def sobre():
 @app.route("/graficos")
 def graficos():
     return render_template("graficos.html") 
+
+@app.route("/graficosgastos")
+def graficosgastos():
+    return render_template("graficosgastos.html") 

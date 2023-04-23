@@ -229,3 +229,14 @@ footer{
     flex-direction: 
         row-reverse;
 }
+
+
+.graficocasos{
+    float: right;
+    width: 50%;
+}
+
+.graficogastos{
+    float: left;
+    width: 40%;
+}
