@@ -18,6 +18,10 @@ def gastos():
 def sobre():
     return render_template("sobre.html")
 
+@app.route("/info")
+def sobre():
+    return render_template("covid.html")
+
 @app.route("/graficos")
 def graficos():
     return render_template("graficos.html") 
