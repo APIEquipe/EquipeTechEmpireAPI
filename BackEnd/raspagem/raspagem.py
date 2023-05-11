@@ -28,6 +28,13 @@ else:
 sexo = str(input('Digite o sexo que quer filtrar F para Feminino e M para Masculino: '))
 response = requests.get(url)
 
+if response.status_code == 200:
+    with open('arquivo.csv', 'wb') as f:
+        f.write(response.content)
+        print('Arquivo baixado com sucesso')
+else:
+    print('Falha ao baixar o arquivo')
+
 
 
 df = pd.read_csv('arquivo.csv', sep=';', encoding='latin1', usecols=['DT_NOTIFIC', 'ID_MUNICIP', 'CS_SEXO'], dtype={'ID_MUNICIP' : 'str', 'CS_SEXO' : 'str'})
