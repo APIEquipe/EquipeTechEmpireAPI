@@ -47,17 +47,20 @@ total_sjc = len(casos_sjc)
 total_taubate = len(casos_taubate)
 total_jacarei = len(casos_jacarei)
 
-
-print(f'O total de casos de homens com síndrome respiratória em {ano} em São José dos Campos é: {total_sjc}')
-print(f'O total de casos de homens com síndrome respiratória em {ano} em Taubaté é: {total_taubate}')
-print(f'O total de casos de homens com síndrome respiratória em {ano} em Jacareí é: {total_jacarei}')
+if sexo == 'M':
+    g = 'homens'
+else:
+    g = 'mulheres'
+print(f'O total de casos de {g} com síndrome respiratória em {ano} em São José dos Campos é: {total_sjc}')
+print(f'O total de casos de {g} com síndrome respiratória em {ano} em Taubaté é: {total_taubate}')
+print(f'O total de casos de {g} com síndrome respiratória em {ano} em Jacareí é: {total_jacarei}')
 
 dados_casos = pd.Series([total_sjc, total_taubate, total_jacarei])
 plt.bar(dados_casos.index, dados_casos.values, color='red', width=0.6)
 plt.xticks(dados_casos.index, ['São José dos Campos', 'Taubaté', 'Jacareí'])
 plt.xlabel('Cidade')
 plt.ylabel('Número de casos')
-plt.title(f'Casos de homens com síndrome respiratória em {ano}')
+plt.title(f'Casos de {g} com síndrome respiratória em {ano}')
 
 for i in range(len(dados_casos)):
     plt.text(dados_casos.index[i], dados_casos.values[i] + 4, str(dados_casos.values[i]), ha='center')
