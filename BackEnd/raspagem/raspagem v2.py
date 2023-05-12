@@ -1,0 +1,77 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import requests
+from bs4 import BeautifulSoup
+import os
+from rich import print
+
+url='https://opendatasus.saude.gov.br/dataset/srag-2021-a-2023'
+filetype='.csv'
+
+headers ={
+    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36'
+}
+lista_links = []
+def get_soup(url):
+    return BeautifulSoup(requests.get(url, headers=headers).text, 'html.parser')
+
+for link in get_soup(url).find_all('a'):
+    csv_link=link.get('href')
+    if filetype in csv_link:
+        lista_links.append(csv_link)
+
+ano = int(input(f'Digite o ano que deseja entre 2021 e 2023: '))
+if ano == 2021:
+    url = lista_links[0]
+elif ano == 2022:
+    url = lista_links[1]
+else:
+    url = lista_links[2]
+sexo = str(input('Digite o sexo que quer filtrar F para Feminino e M para Masculino: ')).upper()
+print(f'Baixando arquivo de: https://opendatasus.saude.gov.br/dataset/srag-2021-a-2023')
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    with open('arquivo.csv', 'wb') as f:
+        f.write(response.content)
+        print(f'[bold][green]Arquivo baixado com sucesso!![/][/]')
+else:
+    print(f'[red][bold]Falha ao baixar o arquivo[/][/]')
+
+
+
+df = pd.read_csv('arquivo.csv', sep=';', encoding='latin1', usecols=['DT_NOTIFIC', 'ID_MUNICIP', 'CS_SEXO'], dtype={'ID_MUNICIP' : 'str', 'CS_SEXO' : 'str'})
+df['data'] = pd.to_datetime(df['DT_NOTIFIC'], format='%d/%m/%Y')
+casos_sjc = df[(df['ID_MUNICIP'] == 'SAO JOSE DOS CAMPOS') & (df['CS_SEXO'] == sexo) & (df['data'].dt.year == ano)] 
+casos_taubate = df[(df['ID_MUNICIP'] == 'TAUBATE') & (df['CS_SEXO'] == sexo) & (df['data'].dt.year == ano)]
+casos_jacarei = df[(df['ID_MUNICIP'] == 'JACAREI') & (df['CS_SEXO'] == sexo) & (df['data'].dt.year == ano)]
+
+total_sjc = len(casos_sjc)
+total_taubate = len(casos_taubate)
+total_jacarei = len(casos_jacarei)
+
+if sexo == 'M':
+    g = 'homens'
+else:
+    g = 'mulheres'
+    
+print(f'O total de casos de [yellow]{g}[/] com síndrome respiratória em [bold]{ano}[/] em São José dos Campos é: {total_sjc}')
+print(f'O total de casos de [yellow]{g}[/] com síndrome respiratória em [bold]{ano}[/] em Taubaté é: {total_taubate}')
+print(f'O total de casos de [yellow]{g}[/] com síndrome respiratória em [bold]{ano}[/] em Jacareí é: {total_jacarei}')
+
+dados_casos = pd.Series([total_sjc, total_taubate, total_jacarei])
+plt.bar(dados_casos.index, dados_casos.values, color='blue', width=0.5)
+plt.xticks(dados_casos.index, ['São José dos Campos', 'Taubaté', 'Jacareí'])
+plt.xlabel('Cidade')
+plt.ylabel('Número de casos')
+plt.title(f'Casos de {g} com síndrome respiratória em {ano}')
+
+for i in range(len(dados_casos)):
+    plt.text(dados_casos.index[i], dados_casos.values[i] + 4, str(dados_casos.values[i]), ha='center')
+
+if not os.path.exists ('graficos'):
+    os.makedirs('graficos')
+caminho = os.path.join(os.getcwd(), 'graficos')
+plt.savefig(os.path.join(caminho, f'grafico casos de {g} com síndrome respiratória em {ano}.png'))
+plt.show()
