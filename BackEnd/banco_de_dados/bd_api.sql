@@ -1,3 +1,4 @@
+drop database api;
 create database api;
 use api;
 
@@ -14,9 +15,9 @@ tp_nome varchar(50) not null
 create table processo(
 pro_id int primary key not null auto_increment,
 tp_id int not null,
-foreign key(tp_id) references tipo_processo(tp_id),
 pro_nome varchar(50) not null,
-pro_desc varchar(150)
+pro_desc varchar(150),
+foreign key(tp_id) references tipo_processo(tp_id)
 );
 
 create table cidades(
@@ -34,12 +35,12 @@ cons_id int primary key not null auto_increment,
 cons_link varchar(200) not null,
 cons_desc varchar(45),
 comp_id int not null,
-foreign key(comp_id) references comparacao(comp_id),
 pro_id int not null,
-foreign key(pro_id) references processo(pro_id),
 cid_id int not null,
-foreign key(cid_id) references cidades(cid_id),
 ano_id int not null,
+foreign key(comp_id) references comparacao(comp_id),
+foreign key(pro_id) references processo(pro_id),
+foreign key(cid_id) references cidades(cid_id),
 foreign key(ano_id) references ano(ano_id)
 );
 
@@ -48,11 +49,12 @@ gast_id int primary key not null auto_increment,
 gast_link varchar(200) not null,
 gast_desc varchar(45),
 comp_id int not null,
-foreign key(comp_id) references comparacao(comp_id),
 pro_id int not null,
-foreign key(pro_id) references processo(pro_id),
 cid_id int not null,
-foreign key(cid_id) references cidades(cid_id),
 ano_id int not null,
+foreign key(comp_id) references comparacao(comp_id),
+foreign key(pro_id) references processo(pro_id),
+foreign key(cid_id) references cidades(cid_id),
 foreign key(ano_id) references ano(ano_id)
 );
+
