@@ -62,6 +62,6 @@ O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separa
 | [Sprint 3](https://github.com/APIEquipe/EquipeTechEmpireAPI/blob/main/relatorios-sprint/sprint3.md#sprint-2) | 24/04/2023 - 14/05/2023 | Entregue :heavy_check_mark: | 
 | Sprint 4 | 15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
 
-![entregas](https://user-images.githubusercontent.com/106455775/233862138-622bf16d-4a67-4f2b-8152-9f0b143c2622.png)
+![processo](https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/112987836/7da310a6-6cfb-4728-bf15-f8a2ce93052c)
 
 
