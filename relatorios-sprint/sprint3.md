@@ -1,6 +1,6 @@
 # Sprint 3
 
-Nesta Sprint o foco foi na raspagem de dados. Houve também atualizaçaõ no número de informações sobre a covid longa e a criação do banco de dados.
+Nesta Sprint o foco foi na raspagem de dados. Houve também atualização no número de informações sobre a covid longa e a criação do banco de dados.
 
 ## Backlog da Sprint
 | Item | Funcionalidade | Planning Poker |
@@ -23,3 +23,4 @@ Nesta Sprint o foco foi na raspagem de dados. Houve também atualizaçaõ no nú
 * O cliente poderá ter uma visão ampla da ferramenta e sugerir possíveis ajustes de navegação nos ambientes desenvolvidos.
 
 ## Funcionalidades desenvolvidas
+![video raspagem (1)](https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/112987836/fde190fa-cad3-45e9-a94a-ca002e7c63fb)
