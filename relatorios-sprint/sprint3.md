@@ -79,5 +79,5 @@ Werkzeug==2.3.4
 pip install -r requirements.txt
 ```
 
-  Com os requerimentos instalados, clique no aplicativo **raspagem v2.py** na parte esquerda do Visual Studio Code e selecione a opção **Executar o Arquivo do Python no Terminal**. Selecionando as opções de desejo, um arquivo será criado com os dados e outro arquivo será criado com um gráfico.
+  Com os requerimentos instalados, clique com o botão direito no aplicativo **raspagem v2.py** na parte esquerda do Visual Studio Code e selecione a opção **Executar o Arquivo do Python no Terminal**. Selecionando as opções de desejo, um arquivo será criado com os dados e outro arquivo será criado com um gráfico.
 
