@@ -1,0 +1,44 @@
+.texto{
+    background-color: #FCFDFF;
+}
+
+.texto div{
+    letter-spacing: 5%;
+    background-color: #4D6AAC;
+    margin: 5%;
+    border-radius: 10px 20px 30px;
+    margin-top: 3%;
+}
+.texto h1{
+    font-size: 8vh;
+    text-align:center;
+    letter-spacing: 5%;
+    color: #FFFFFF;
+    border-radius: 10px 20px 30px;
+    margin-top: 3%;
+  }
+
+  .texto h2{
+    text-decoration: none;
+    font-size: 3vh;
+    text-align: center;
+    letter-spacing: 5%;
+    color: #f3f4f7;
+
+  }
+
+#botao{
+      background: #2a3d68;
+      border-radius: 6px;
+      padding: 15px;
+      cursor: pointer; 
+      color: #fff;
+      border: none;
+      font-size: 4vh;
+      cursor: pointer;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}

@@ -19,7 +19,7 @@ def sobre():
     return render_template("sobre.html")
 
 @app.route("/info")
-def sobre():
+def info():
     return render_template("covid.html")
 
 @app.route("/graficos")
