@@ -2,7 +2,7 @@
 
 Nesta Sprint o foco foi na raspagem de dados. Houve também atualização no número de informações sobre a covid longa e a criação do banco de dados.
 
-## Backlog da Sprint
+## Tarefas
 | Item | Funcionalidade | Planning Poker |
 | :--: | :--------------: | :-------------: |
 |  01  | Pesquisa aprofundada acerca dos dados. | 8 |
