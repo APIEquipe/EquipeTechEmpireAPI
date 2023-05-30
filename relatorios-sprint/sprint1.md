@@ -2,7 +2,7 @@
 
 Entrega do protótipo da interface gráfica contendo a tela inicial e o gráfico demonstrativo relacionada a Covid-19.
 
-## Backlog da Sprint
+## Tarefas
 | Item | Funcionalidade | Planning Poker |
 | :--: | :--------------: | :-------------: |
 |  01  | Levantamento de requisitos. | 8 |
