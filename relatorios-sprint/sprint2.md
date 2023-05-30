@@ -2,7 +2,7 @@
 
 Nesta Sprint o foco foi no desenvolvimento das telas e arquivos para a raspagem de dados. Além disso iniciou-se também mudanças e implementações no protótipo.
 
-## Backlog da Sprint
+## Tarefas
 | Item | Funcionalidade | Planning Poker |
 | :--: | :--------------: | :-------------: |
 |  01  | Criação de página - Gastos. | 8 |
