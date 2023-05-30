@@ -1,5 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from flask_mysqldb import MySQL
 app = Flask(__name__)
+
+#Conexão com banco de dados
+app.config['MYSQL_HOST'] = 'localhost' #127.0.0.1
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'fatec'
+app.config['MYSQL_DB'] = 'Api'
+
+mysql = MySQL(app)
 
 
 @app.route('/')
@@ -29,3 +38,20 @@ def graficos():
 @app.route("/graficosgastos")
 def graficosgastos():
     return render_template("graficosgastos.html") 
+
+ @app.route('/sugestao', methods=["GET", "POST"])
+def cadastro():
+    if request.method == "POST":
+        email = request.form['email']
+        assunto = request.form['assunto']
+        descricao = request.form['sugestao']
+
+        cur = mysql.connection.cursor()
+        cur.execute("INSERT INTO contatos(email, assunto, descricao) values (%s, %s, %s)", (email, assunto, sugestao))
+
+        mysql.connection.commit()
+
+        cur.close()
+
+        return render_template("sucesso.html")
+    return render_template("sugestao.html")
