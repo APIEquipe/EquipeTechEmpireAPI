@@ -9,14 +9,26 @@
 - [Silmara Bittencourt](https://github.com/SBittencourt) / _Product Owner_
 
 ## Sobre o Projeto
-Projeto desenvolvido por alunos do 1º semestre do curso de Desenvolviento de Software Multiplatafora, da [Fatec São José dos Campos - Prof. Jessen Vidal.](https://fatecsjc-prd.azurewebsites.net/)
+Projeto desenvolvido por alunos do 1º semestre do curso de Desenvolvimento de Software Multiplatafora, da [Fatec São José dos Campos - Prof. Jessen Vidal.](https://fatecsjc-prd.azurewebsites.net/)
 Consiste na criação de uma aplicação web que permite a analise de dados sobre a covid longa nas cidades de cobertura da Vanguarda, a fim de entender o impacto desssa condição no sistema de saúde das maiores cidades do Vale do Paraíba.
 Back-end do projeto desenvolvido em Python3+ utilizando o microframework flask e o MySQL para gerenciar o banco de dados.
 
 ## Visão Geral
-O produto é voltado para profissionais da área de saúde, pesquisadores e público em geral interessado em entender o impacto da covid longa no sistema de saúde das maiores cidades do Vale do Paraíba, a aplicação web ajuda os usuários que desejam ter acesso a dados precisos e atualizados sobre a covid longa nas cidades da região, a fim de entender melhor essa condição e seu impacto na saúde pública. Ao contrário de outros sistemas que podem apresentar dados genéricos sobre a covid-19, esse se concentra especificamente na análise de dados da Covid Longa nas cidades de cobertura da Vanguarda, nosso produto elabora informações detalhadas sobre a Covid Longa nas cidades de cobertura da Vanguarda, incluindo dados sobre casos, hospitalizações, sintomas, tratamentos e outros aspectos relevantes para a compreensão da condição e seus efeitos no sistema de saúde da região. Com base nesses dados, o produto deve ajudar os usuários a entender melhor a Covid Longa e desenvolver estratégias para enfrentá-la de forma eficaz.
+O produto é voltado para profissionais da área de saúde, pesquisadores e público em geral interessado em entender o impacto da covid longa no sistema de saúde das maiores cidades do Vale do Paraíba, a aplicação web ajuda os usuários que desejam ter acesso a dados precisos e atualizados sobre a covid longa nas cidades da região, a fim de entender melhor essa condição e seu impacto na saúde pública. Ao contrário de outros sistemas que podem apresentar dados genéricos sobre a covid-19, esse se concentra especificamente na análise de dados da Covid Longa nas cidades de cobertura da Vanguarda, nosso produto elabora informações detalhadas , incluindo dados sobre casos, hospitalizações, sintomas, tratamentos e outros aspectos relevantes para a compreensão da condição e seus efeitos no sistema de saúde da região. Com base nesses dados, o produto deve ajudar os usuários a entender melhor a Covid Longa e desenvolver estratégias para enfrentá-la de forma eficaz.
 
 ## Backlog do Produto
+ ID | Quem? | Para |
+|:--------------:  | :----------:|:---------------------------------------------------------:|
+| **01** |   Jornalista   | Gostaria de saber os tipos de consultas, tratamentos, procedimentos e uso de medicamentos entre os anos de 2019 a 2022 para compara-los e obter conteúdo para a sua matéria. |
+| **02** |   Jornalista   | Gostaria de relacionar os tipos de consulta, tratamento, procedimentos e use de medicamentos para saber quais tiveram aumento e quais tiveram queda, a fim de obter conteúdo para sua matéria. |
+| **03** |   Jornalista   | Gostaria de relacionar essas variação com a covid-19 para obter conteúdo para a sua matéria. |
+| **04** |   Jornalista   | Gostaria de comparar os dados das consultas, tratamentos, procedimentos e uso de medicamentos entre 2019 e a partir de 2021 para saber quais foram mais usados em pacientes de covid longa, a fim de obter conteúdo para sua matéria. |
+| **05** |   Jornalista   | Gostaria de saber os gastos/investimentos feitos em consultas, tratamentos, procedimentos e uso de medicamentos para dObter conteúdo para sua matéria. | 
+| **06** |   Jornalista   | Gostaria de estabelecer uma participação dessas consultas, procedimentos, tratamentos e usos de medicamentos no total utilizado pelo SUS no período pré e pós pandemia para obter conteúdo para sua matéria. |
+| **07** |   Jornalista   | Gostaria de uma interface com navegação intuitiva e responsiva para usar a aplicação. |
+| **08** |   Jornalista   | Gostaria que os dados estejam armazenados e organizados em um Banco de Dados para serem mais acessíveis. |
+
+## Tarefas
 | User Story | Requisito | Funcionalidade | Sprint |
 | :--:       | :-----------:|:--------------:     |:--:    |
 | **10** | **RNF03** | Levantamento de requisitos. | 1 |
@@ -39,18 +51,6 @@ O produto é voltado para profissionais da área de saúde, pesquisadores e púb
 | **05** | **RF05** | Gráficos - Filtro por gastos. | 4 |
 |  |  | Ajustes necessários. | 4 |
 | **10** | **RNF03** | Finalização da documentação e organização final do GitHub. | 4 |
-
-## User Story
- ID | Quem? | Para |
-|:--------------:  | :----------:|:---------------------------------------------------------:|
-| **01** |   Jornalista   | Gostaria de saber os tipos de consultas, tratamentos, procedimentos e uso de medicamentos entre os anos de 2019 a 2022 para compara-los e obter conteúdo para a sua matéria. |
-| **02** |   Jornalista   | Gostaria de relacionar os tipos de consulta, tratamento, procedimentos e use de medicamentos para saber quais tiveram aumento e quais tiveram queda, a fim de obter conteúdo para sua matéria. |
-| **03** |   Jornalista   | Gostaria de relacionar essas variação com a covid-19 para obter conteúdo para a sua matéria. |
-| **04** |   Jornalista   | Gostaria de comparar os dados das consultas, tratamentos, procedimentos e uso de medicamentos entre 2019 e a partir de 2021 para saber quais foram mais usados em pacientes de covid longa, a fim de obter conteúdo para sua matéria. |
-| **05** |   Jornalista   | Gostaria de saber os gastos/investimentos feitos em consultas, tratamentos, procedimentos e uso de medicamentos para dObter conteúdo para sua matéria. | 
-| **06** |   Jornalista   | Gostaria de estabelecer uma participação dessas consultas, procedimentos, tratamentos e usos de medicamentos no total utilizado pelo SUS no período pré e pós pandemia para obter conteúdo para sua matéria. |
-| **07** |   Jornalista   | Gostaria de uma interface com navegação intuitiva e responsiva para usar a aplicação. |
-| **08** |   Jornalista   | Gostaria que os dados estejam armazenados e organizados em um Banco de Dados para serem mais acessíveis. |
 
 ## Relatório de Entregas
 O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separadas em 4 entregas com sprints de 21 dias de duração cada uma.
