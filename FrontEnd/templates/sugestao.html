@@ -1,32 +1,55 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
-{% block main %}
+{% block titulo %}<title>Sobre</title>{% endblock %}
 
+{% block background %}<body class="fundo">{% endblock %}
+
+{% block conteudo %}
 <!-- Corpo -->
 
-<h2 class="a">Entre em contato</h2>
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia soluta ipsa necessitatibus..</p>
-
-<hr>
-
-<form method="post">
-
-    Seu e-mail: <br>
-    <input type="text" name="email"> <br>
-
-    Assunto: <br>
-    <input type="text" name="assunto"> <br>
-
-    <label for="descricao">Sugestão</label>
-    <br>
-    <textarea id="descricao" name="descricao"></textarea>
-    <br>
+<div class="inicial">
+    <h1>Alguma sugestão?</h1>
     
-    <input type="submit" value="Enviar">
+    <br>
 
+    <p>
+        Estamos sempre buscando melhorar e sua opinião é muito importante para isso. Sinta-se a vontade para nos dar seu feedback e sugestões de mais gráficos que possam ser inseridos.
+    </p>
+    
+    <hr>
+    <br>
 
+</div>
+
+<div class="formulario">
+    <br>
+    <form method="post">
+             Seu e-mail:
+             <br>
+             <p id="bonito">
+             <input type="text" name="email">
+             <br>
+            </p>
+             Assunto:
+             <br>
+             <br>
+             <input type="text" name="assunto">
+             <br>
+             <br>
+             <label for="sugestao">Sugestão</label>
+             <br>
+             <br>
+            <textarea id="sugestao" name="sugestao"></textarea>
+            <br>
+    
+    <p>
+    <input type="submit" id="botaoenviar" value="Enviar">
+    </p>
+    <br>
+    <br>
 </form>
 </div>
 
 {% endblock %} 
+
+</html>

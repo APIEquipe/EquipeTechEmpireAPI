@@ -32,13 +32,57 @@
       border-radius: 6px;
       padding: 15px;
       cursor: pointer; 
-      color: #fdff9cd7;
+      color: #fffce6d7;
       border: none;
       font-size: 4vh;
-      cursor: pointer;
 }
 
 .btn{
     width: 100%;
     text-align: center;
+}
+
+.inicial{
+  text-align: center;
+}
+
+.inicial h1{
+  font-size: 6vh;
+  color: #2a3d68;
+}
+
+.inicial p{
+  font-size: 2vh;
+  color: #34497a;
+}
+
+.formulario{
+  font-size: 2vh;
+  text-align: center;
+  display: inline;
+  color: #152241;
+}
+
+#botaoenviar{
+  width: 80px;
+  height: 40px;
+  background: #6886CA;
+  color: white;
+  border-radius: 13px;
+  border: none;
+  
+}
+
+/*#bonito{
+  width: 230px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  background: #dddddd;
+  border-radius: 13px;
+  color: #A7A7A7;
 }

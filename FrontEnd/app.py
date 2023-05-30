@@ -39,15 +39,15 @@ def graficos():
 def graficosgastos():
     return render_template("graficosgastos.html") 
 
- @app.route('/sugestao', methods=["GET", "POST"])
+@app.route('/sugestao', methods=["GET", "POST"])
 def cadastro():
     if request.method == "POST":
         email = request.form['email']
         assunto = request.form['assunto']
-        descricao = request.form['sugestao']
+        sugestao = request.form['sugestao']
 
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO contatos(email, assunto, descricao) values (%s, %s, %s)", (email, assunto, sugestao))
+        cur.execute("INSERT INTO contatos(email, assunto, sugestao) values (%s, %s, %s)", (email, assunto, sugestao))
 
         mysql.connection.commit()
 
