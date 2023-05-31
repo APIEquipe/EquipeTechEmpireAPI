@@ -10,7 +10,7 @@
     margin-top: 3%;
 }
 .texto h1{
-    font-size: 8vh;
+    font-size: 6vh;
     text-align:center;
     letter-spacing: 5%;
     color: #ffffff;
@@ -23,7 +23,7 @@
     font-size: 3vh;
     text-align: center;
     letter-spacing: 5%;
-    color: #eaecf0;
+    color: #f1f1f5;
 
   }
 
@@ -32,9 +32,9 @@
       border-radius: 6px;
       padding: 15px;
       cursor: pointer; 
-      color: #fffdf6;
+      color: #f9fcff;
       border: none;
-      font-size: 4vh;
+      font-size: 3vh;
 }
 
 .btn{
@@ -75,13 +75,14 @@
 
 .capa{
   background-color: #FCFDFF;
-  width: 60%;
-  height: 40%;
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
 }
 
 .capa div{
   letter-spacing: 5%;
-  background-color: #b3c5ec;
+  background-color: #3f568d;
   margin: 5%;
   border-radius: 10px 20px 30px;
   margin-top: 3%;
@@ -92,38 +93,27 @@
   font-size: 4vh;
   text-align: center;
   letter-spacing: 5%;
-  color: #354e86;
-
+  color: #eaf0fd;
 }
 
 .capa2{
   background-color: #FCFDFF;
-  width: 60%;
-  height: 40%;
-  padding-left: 40%;
+  width: 80%;
+  height: 100%;
 }
 
 .capa2 div{
   letter-spacing: 5%;
-  background-color: #b3c5ec;
+  background-color: #5d79bb;
   margin: 5%;
   border-radius: 10px 20px 30px;
   margin-top: 3%;
 }
 
-.capa2 h2{
+.capa2 h3{
   text-decoration: none;
-  font-size: 4vh;
+  font-size: 3vh;
   text-align: center;
   letter-spacing: 5%;
-  color: #354e86;
-
-}
-
-.capa2 li{
-  text-decoration: none;
-  font-size: 4vh;
-  text-align: center;
-  letter-spacing: 5%;
-  color: #354e86;
+  color: #ecf2ff;
 }
