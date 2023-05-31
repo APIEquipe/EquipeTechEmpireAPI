@@ -23,7 +23,7 @@
     font-size: 3vh;
     text-align: center;
     letter-spacing: 5%;
-    color: #f3f4f7;
+    color: #eaecf0;
 
   }
 
@@ -32,7 +32,7 @@
       border-radius: 6px;
       padding: 15px;
       cursor: pointer; 
-      color: #fffce6d7;
+      color: #fffdf6;
       border: none;
       font-size: 4vh;
 }
@@ -66,23 +66,38 @@
 #botaoenviar{
   width: 80px;
   height: 40px;
-  background: #6886CA;
+  background: #abc0f1;
   color: white;
   border-radius: 13px;
   border: none;
   
 }
 
-/*#bonito{
-  width: 230px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  width: fit-content;
-  height: fit-content;
-  background: #dddddd;
-  border-radius: 13px;
-  color: #A7A7A7;
+.capa{
+  background-color: #FCFDFF;
+}
+
+.capa div{
+  letter-spacing: 5%;
+  background-color: #89a7eb;
+  margin: 5%;
+  border-radius: 10px 20px 30px;
+  margin-top: 3%;
+}
+.capa h1{
+  font-size: 8vh;
+  text-align:center;
+  letter-spacing: 5%;
+  color: #595eac;
+  border-radius: 10px 20px 30px;
+  margin-top: 3%;
+}
+
+.capa h2{
+  text-decoration: none;
+  font-size: 3vh;
+  text-align: center;
+  letter-spacing: 5%;
+  color: #eaecf0;
+
 }
