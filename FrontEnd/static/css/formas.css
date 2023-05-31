@@ -75,29 +75,55 @@
 
 .capa{
   background-color: #FCFDFF;
+  width: 60%;
+  height: 40%;
 }
 
 .capa div{
   letter-spacing: 5%;
-  background-color: #89a7eb;
+  background-color: #b3c5ec;
   margin: 5%;
-  border-radius: 10px 20px 30px;
-  margin-top: 3%;
-}
-.capa h1{
-  font-size: 8vh;
-  text-align:center;
-  letter-spacing: 5%;
-  color: #595eac;
   border-radius: 10px 20px 30px;
   margin-top: 3%;
 }
 
 .capa h2{
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 4vh;
   text-align: center;
   letter-spacing: 5%;
-  color: #eaecf0;
+  color: #354e86;
 
+}
+
+.capa2{
+  background-color: #FCFDFF;
+  width: 60%;
+  height: 40%;
+  padding-left: 40%;
+}
+
+.capa2 div{
+  letter-spacing: 5%;
+  background-color: #b3c5ec;
+  margin: 5%;
+  border-radius: 10px 20px 30px;
+  margin-top: 3%;
+}
+
+.capa2 h2{
+  text-decoration: none;
+  font-size: 4vh;
+  text-align: center;
+  letter-spacing: 5%;
+  color: #354e86;
+
+}
+
+.capa2 li{
+  text-decoration: none;
+  font-size: 4vh;
+  text-align: center;
+  letter-spacing: 5%;
+  color: #354e86;
 }
