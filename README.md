@@ -1,10 +1,10 @@
 ## Sumário
-- <h2><a href="#equipe" style="font-size: 7px;">Equipe</a></h2>
-- <h2><a href="#sobre-o-projeto" style="font-size: 7px;">Sobre o Projeto</a></h2>
-- <h2><a href="#visão-geral" style="font-size: 7px;">Visão Geral</a></h2>
-- <h2><a href="#backlog-do-produto" style="font-size: 7px;">Backlog do Produto</a></h2>
-- <h2><a href="#tarefas" style="font-size: 7px;">Tarefas</a></h2>
-- <h2><a href="#relatório-de-entregas" style="font-size: 7px;">Relatório de Entregas</a></h2>
+- [Equipe](#equipe)
+- [Sobre o projeto](#sobre-o-projeto)
+- [Visão Geral](#visão-geral)
+- [Backlog do Produto](#backlog-do-produto)
+- [Tarefas](#tarefas)
+- [Relatório de Entregas](#relatório-de-entregas)
 
 ## Equipe<a name="equipe"></a>
 | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/470b9d69-88ee-4b51-a072-aa5b70655778" alt="Gabriel" width="250px"> | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/441d68fa-1d55-482c-8a4a-d9fd44334dd6" alt="Gustavo" width="250px"> | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/f1f3f29a-5fec-4f70-9760-b5915e345f66" alt="Juan" width="250px"> | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/b29ce44f-fbee-4aee-892f-38ce2b39c84d" alt="Kauê" width="250px"> |
