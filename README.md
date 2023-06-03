@@ -1,14 +1,24 @@
-## Equipe
-- [Gabriel Henrique](https://github.com/GaSiqueira) / _Scrum Master_
-- [Gustavo Castilho](https://github.com/GustavoCastilhoLucena) / _Dev_
-- [Juan Santos](https://github.com/JuanSantosVale) / _Dev_
-- [Kaue Riki](https://github.com/kaueriki) / _Dev_
-- [Lucca Vilela](https://github.com/luccavilela) / _Dev_
-- [Miguel Conde](https://github.com/miguelcondesantos) / _Dev_
-- [Sarah Antunes](https://github.com/Amentine) / _Dev_
-- [Silmara Bittencourt](https://github.com/SBittencourt) / _Product Owner_
+## Sumário
+- <h2><a href="#equipe" style="font-size: 7px;">Equipe</a></h2>
+- <h2><a href="#sobre-o-projeto" style="font-size: 7px;">Sobre o Projeto</a></h2>
+- <h2><a href="#visão-geral" style="font-size: 7px;">Visão Geral</a></h2>
+- <h2><a href="#backlog-do-produto" style="font-size: 7px;">Backlog do Produto</a></h2>
+- <h2><a href="#tarefas" style="font-size: 7px;">Tarefas</a></h2>
+- <h2><a href="#relatório-de-entregas" style="font-size: 7px;">Relatório de Entregas</a></h2>
 
-## Sobre o Projeto
+## Equipe<a name="equipe"></a>
+| <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/470b9d69-88ee-4b51-a072-aa5b70655778" alt="Gabriel" width="250px"> | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/441d68fa-1d55-482c-8a4a-d9fd44334dd6" alt="Gustavo" width="250px"> | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/f1f3f29a-5fec-4f70-9760-b5915e345f66" alt="Juan" width="250px"> | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/b29ce44f-fbee-4aee-892f-38ce2b39c84d" alt="Kauê" width="250px"> |
+| :-------------------------------------------------: | :---------------------------------------------------: | :---------------------------------------------------: | :---------------------------------------------------: |
+|  [Gabriel Henrique](https://www.linkedin.com/in/gabriel-siqueira-54b535279/) | [Gustavo Castilho](https://www.linkedin.com/in/gustavo-castilho-70b538279/) | [Juan Santos](https://www.linkedin.com/in/juan-santos-b78724279/) | [Kaue Riki](https://www.linkedin.com/in/kau%C3%AA-riki-70b518273/) |
+| _Scrum Master_ |  _Dev_ |  _Dev_ | _Dev_ |
+
+| <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/2fde7d45-bf69-413c-b395-e7a08dadbe03" alt="Lucca" width="250px"> | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/28400738-b9af-4540-b543-0ce469449ec5" alt="Miguel" width="250px"> | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/7e55e4ad-a790-427a-a439-14bb0ef0d679" alt="Sarah" width="250px"> | <img src="https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/106455775/1eb5e6b5-9014-43f3-ad61-fe84049909e1" alt="Silmara" width="250px"> |
+| :-------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------: | 
+| [Lucca Vilela](https://www.linkedin.com/in/lucca-vilela-b90730232/) | [Miguel Conde](https://www.linkedin.com/in/miguel-conde-santos-a67313271/) | [Sarah Antunes](https://www.linkedin.com/in/sarah-antunes-38a7a1204/) | [Silmara Bittencourt](https://www.linkedin.com/in/silmara-bittencourt-243478214/)
+| _Dev_ | _Dev_ | _Dev_ | _Product Owner_ |
+
+
+## Sobre o Projeto<a name="sobre-o-projeto"></a>
 Projeto desenvolvido por alunos do 1º semestre do curso de Desenvolvimento de Software Multiplatafora, da [Fatec São José dos Campos - Prof. Jessen Vidal.](https://fatecsjc-prd.azurewebsites.net/)
 Consiste na criação de uma aplicação web que permite a analise de dados sobre a covid longa nas cidades de cobertura da Vanguarda, a fim de entender o impacto desssa condição no sistema de saúde das maiores cidades do Vale do Paraíba.
 Back-end do projeto desenvolvido em Python3+ utilizando o microframework flask e o MySQL para gerenciar o banco de dados.
@@ -16,7 +26,7 @@ Back-end do projeto desenvolvido em Python3+ utilizando o microframework flask e
 ## Visão Geral
 O produto é voltado para profissionais da área de saúde, pesquisadores e público em geral interessado em entender o impacto da covid longa no sistema de saúde das maiores cidades do Vale do Paraíba, a aplicação web ajuda os usuários que desejam ter acesso a dados precisos e atualizados sobre a covid longa nas cidades da região, a fim de entender melhor essa condição e seu impacto na saúde pública. Ao contrário de outros sistemas que podem apresentar dados genéricos sobre a covid-19, esse se concentra especificamente na análise de dados da Covid Longa nas cidades de cobertura da Vanguarda, nosso produto elabora informações detalhadas , incluindo dados sobre casos, hospitalizações, sintomas, tratamentos e outros aspectos relevantes para a compreensão da condição e seus efeitos no sistema de saúde da região. Com base nesses dados, o produto deve ajudar os usuários a entender melhor a Covid Longa e desenvolver estratégias para enfrentá-la de forma eficaz.
 
-## Backlog do Produto
+## Backlog do Produto<a name="backlog-do-produto"></a>
  ID | Quem? | Para |
 |:--------------:  | :----------:|:---------------------------------------------------------:|
 | **01** |   Jornalista   | Gostaria de saber os tipos de consultas, tratamentos, procedimentos e uso de medicamentos entre os anos de 2019 a 2022 para compara-los e obter conteúdo para a sua matéria. |
@@ -28,7 +38,7 @@ O produto é voltado para profissionais da área de saúde, pesquisadores e púb
 | **07** |   Jornalista   | Gostaria de uma interface com navegação intuitiva e responsiva para usar a aplicação. |
 | **08** |   Jornalista   | Gostaria que os dados estejam armazenados e organizados em um Banco de Dados para serem mais acessíveis. |
 
-## Tarefas
+## Tarefas<a name="tarefas"></a>
 | User Story | Requisito | Funcionalidade | Sprint |
 | :--:       | :-----------:|:--------------:     |:--:    |
 | **10** | **RNF03** | Levantamento de requisitos. | 1 |
@@ -52,7 +62,7 @@ O produto é voltado para profissionais da área de saúde, pesquisadores e púb
 |  |  | Ajustes necessários. | 4 |
 | **10** | **RNF03** | Finalização da documentação e organização final do GitHub. | 4 |
 
-## Relatório de Entregas
+## Relatório de Entregas<a name="relatório-de-entregas"></a>
 O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separadas em 4 entregas com sprints de 21 dias de duração cada uma.
 
 | Links | Período | Status |
