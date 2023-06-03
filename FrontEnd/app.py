@@ -3,7 +3,7 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 
 #Conexão com banco de dados
-app.config['MYSQL_HOST'] = 'localhost' #127.0.0.1
+app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'fatec'
 app.config['MYSQL_DB'] = 'Api'
