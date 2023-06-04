@@ -55,11 +55,9 @@ O produto é voltado para profissionais da área de saúde, pesquisadores e púb
 | **01** | **RF01** | Ferramenta para criação dos gráficos a partir dos dados coletados. | 3 |
 | **09** | **RNF02** | Criação do banco de dados. | 3 |
 | **09** | **RNF02** | Conexão do BD com a ferramenta de criação de gráficos. | 3 |
-| **02** | **RF02** | Gráficos - Filtro para visualizar aumento e queda. | 4 |
-| **03** | **RF03** | Gráficos - Filtro para visualizar por tempo. | 4 |
-| **04** | **RF04** | Gráficos - Filtro por quantia de utilização. | 4 |
-| **05** | **RF05** | Gráficos - Filtro por gastos. | 4 |
-|  |  | Ajustes necessários. | 4 |
+| **02** | **RF02** | Conexão do backend e do frontend. | 4 |
+| **03** | **RF03** | Codificação dos filtros para o funcionamento da ferramenta. | 4 |
+|  |  | Melhorias e testes para confirmar o funcionamento. | 4 |
 | **10** | **RNF03** | Finalização da documentação e organização final do GitHub. | 4 |
 
 ## Relatório de Entregas<a name="relatório-de-entregas"></a>
