@@ -67,8 +67,8 @@ O projeto está sendo realizado utilizando-se da metodologia ágil SCRUM, separa
 |:-----:|:----------:|:---------:|
 | [Sprint 1](https://github.com/APIEquipe/EquipeTechEmpireAPI/blob/main/relatorios-sprint/sprint1.md#sprint-1) | 13/02/2023 - 02/04/2023 | Entregue :heavy_check_mark: |
 | [Sprint 2](https://github.com/APIEquipe/EquipeTechEmpireAPI/blob/main/relatorios-sprint/sprint2.md#sprint-2) | 03/04/2023 - 23/04/2023 | Entregue :heavy_check_mark: |  
-| [Sprint 3](https://github.com/APIEquipe/EquipeTechEmpireAPI/blob/main/relatorios-sprint/sprint3.md#sprint-2) | 24/04/2023 - 14/05/2023 | Entregue :heavy_check_mark: | 
-| Sprint 4 | 15/05/2023 - 04/06/2023 | Pendente :hourglass: |  
+| [Sprint 3](https://github.com/APIEquipe/EquipeTechEmpireAPI/blob/main/relatorios-sprint/sprint3.md#sprint-3) | 24/04/2023 - 14/05/2023 | Entregue :heavy_check_mark: | 
+| [Sprint 4](https://github.com/APIEquipe/EquipeTechEmpireAPI/blob/main/relatorios-sprint/sprint4.md#sprint-4) | 15/05/2023 - 04/06/2023 | Entregue :heavy_check_mark: |  
 
 ![processo](https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/112987836/7da310a6-6cfb-4728-bf15-f8a2ce93052c)
 
