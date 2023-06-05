@@ -11,57 +11,237 @@
         <div class="container_gastos">
             <div class="flexbox_filtro consultar">
                 <div class="consulta">
-                    <form id="form" action="/graficosgastos" method="get">
+                    <!-- <form id="form" action="/graficosgastos" method="get"> -->
                         <h3 id="titulo-primario">Filtros</h3>
                         <p>
                         <label for="processo" id="titulo-secundario">Processo:</label> <br>
-                        <select id="processo" name="processo">
-                            <option value="medicamento">Medicamentos</option>
-                            <option value="consulta">Consultas Médicas</option>
-                            <option value="gastos" selected>Gastos</option>
-                        </select>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Método
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownButton">
+                            <a class="dropdown-item" type="button" onclick="updateValues('prodamb')">Prod. Ambulatorial</a>
+                            <a class="dropdown-item" type="button" onclick="updateValues('trathipert')">Trat. Hipertensão</a>
+                            <!-- <a class="dropdown-item" type="button" onclick="updateValues('doenca')">Doença</a> -->
+                            </div>
+                        </div>
                         </p>
                         <p>
-                        <label for="comparar" id="titulo-secundario">Critério de Comparação:</label> <br>
-                        <select id="comparar" name="comparar">
-                            <option value="totais">Totais</option>
-                            <option value="aumento">Aumentos</option>
-                            <option value="reducao">Reduções</option>
-                        </select>
                         </p>
                         <p>
-                        <label for="periodo" id="titulo-secundario">Período:</label> <br>
-                        <select id="periodo" name="periodo">
-                            <option value="2019">2019</option>
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-                        </select>
+                        <label for="periodo" id="titulo-secundario" >Período:</label> <br>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="yearDropdownButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Anos
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="yearDropdownButton">
+                            <form id="yearForm">
+                                <div class="dropdown-item">
+                                <input type="checkbox" id="yearOption1" value="2019">
+                                <label for="yearOption1">2019</label>
+                                </div>
+                                <div class="dropdown-item">
+                                <input type="checkbox" id="yearOption2" value="2020">
+                                <label for="yearOption1">2020</label>
+                                </div>
+                                <div class="dropdown-item">
+                                <input type="checkbox" id="yearOption3" value="2021">
+                                <label for="yearOption2">2021</label>
+                                </div>
+                                <div class="dropdown-item">
+                                <input type="checkbox" id="yearOption4" value="2022">
+                                <label for="yearOption3">2022</label>
+                                </div>
+                                <div class="dropdown-item">
+                                <input type="checkbox" id="yearOption5" value="2023">
+                                <label for="yearOption3">2023</label>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
                         </p>     
                         <p>
                         <label for="cidade" id="titulo-secundario">Cidade:</label> <br>
-                        <div class="flexbox_filtro_select">
-                            <select id="cidade" name="cidade">
-                            <option value="sjc">São José dos Campos</option>
-                            <option value="jacarei">Jacarei</option>
-                            <option value="taubate">Taubate</option>
-                            </select>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="cityDropdownButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Cidades
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="cityDropdownButton">
+                            <form id="cityForm">
+                                <div class="dropdown-item">
+                                <input type="checkbox" id="cityOption1" value="Jacareí">
+                                <label for="cityOption1">Jacareí</label>
+                                </div>
+                                <div class="dropdown-item">
+                                <input type="checkbox" id="cityOption2" value="São José dos Campos">
+                                <label for="cityOption2">São José dos Campos</label>
+                                </div>
+                                <div class="dropdown-item">
+                                <input type="checkbox" id="cityOption3" value="Taubaté">
+                                <label for="cityOption3">Taubaté</label>
+                                </div>
+                            </form>
+                            </div>
                         </div>
                         </p>
-                        <div class="filtro_botao">
-                            <p id="filtro_consultar_botao_aplicar">
-                                <button type="submit" name="aplicar" value="aplicar" id="filtro_consultar_botao_aplicar">Aplicar</button>
-                            </p>
-                            <p id="filtro_consultar_botao_limpar">
-                                <button type="reset" id="filtro_consultar_botao_limpar">Limpar</button>
-                            </p>
-                          </div>
-                    </form>
+                        <div >
+                            <!-- class="filtro_botao" -->
+                            <button class="btn btn-success" id="openChartButton">Abrir Gráfico</button>
+                        </div>
+                    <!-- </form> -->
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+<!--         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> 
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+    </div>
+
+    <script>
+        const yearForm = document.getElementById('yearForm');
+        const cityForm = document.getElementById('cityForm');
+        const openChartButton = document.getElementById('openChartButton');
+        const chartCanvas = document.getElementById('chart');
+        const yearDropdownButton = document.getElementById('yearDropdownButton');
+        const cityDropdownButton = document.getElementById('cityDropdownButton');
+    
+        // Função para atualizar os valores das variáveis
+        function updateValues(option) {
+          const selectedValueElement = document.getElementById('selectedValue');
+          const variablesElement = document.getElementById('variables');
+    
+          selectedValueElement.textContent = option;
+          variablesElement.textContent = JSON.stringify(variables[option], null, 2);
+        }
+    
+    /*     yearDropdownButton.addEventListener('click', () => toggleDropdown(yearDropdownButton));
+        cityDropdownButton.addEventListener('click', () => toggleDropdown(cityDropdownButton)); */
+    
+        const chartData = {
+          labels: [],
+          datasets: []
+        };
+    
+        const chartOptions = {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        };
+    
+        let cityData = {
+            "Jacareí": [0, 0, 0, 0, 0],
+            "São José dos Campos": [0, 0, 0, 0, 0],
+            "Taubaté": [0, 0, 0, 0, 0]
+            };
+    
+        let updateChart = () => {
+            const yearForm = document.getElementById('yearForm');
+            const cityForm = document.getElementById('cityForm');
+            const selectedYears = Array.from(yearForm.elements)
+                .filter((element) => element.checked)
+                .map((element) => element.value);
+    
+            const selectedCities = Array.from(cityForm.elements)
+                .filter((element) => element.checked)
+                .map((element) => element.value);
+            
+          chartData.labels = selectedYears;
+          chartData.datasets = selectedCities.map((city) => {
+            const color = getRandomColor();
+            const data = cityData[city];
+    
+            return {
+              label: city,
+              data: data,
+              backgroundColor: color,
+              borderColor: color,
+              borderWidth: 1
+            };
+          });
+    
+          if (chartCanvas.chart) {
+            chartCanvas.chart.data = chartData;
+            chartCanvas.chart.update();
+          } else {
+            chartCanvas.chart = new Chart(chartCanvas, {
+              type: 'bar',
+              data: chartData,
+              options: chartOptions
+            });
+          }
+        };
+    
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function(event) {
+              const option = event.target.id;
+              updateValues(option);
+            });
+          });
+    
+          function updateValues(option) {
+            if (option === 'prodamb') {
+              // Valores para Casos
+              cityData["Jacareí"] = [21638951, 19376787, 21666762, 24159981, 0];
+              cityData["São José dos Campos"] = [57727162, 58625876, 63313424, 57727162, 0];
+              cityData["Taubaté"] = [22974394, 22021658, 23714665, 28571721, 0];
+            } else if (option === 'trathipert') {
+              // Valores para Sindrome Repiratória Grave
+              cityData["Jacareí"] = [0, 522.12, 6023.17, 0, 0];
+              cityData["São José dos Campos"] = [540, 5838, 6158, 3541, 0];
+              cityData["Taubaté"] = [0, 837.91, 943.65, 4369.17, 0];
+            } /* else if (option === 'doenca') {
+              // Valores para Doença
+              cityData["Jacareí"] = [5, 10, 15, 20];
+              cityData["São José dos Campos"] = [10, 15, 20, 25];
+              cityData["Taubaté"] = [2, 4, 6, 8];
+            } */
+            
+            console.log(cityData);
+          }
+    
+        const getRandomColor = () => {
+          const letters = '0123456789ABCDEF';
+          let color = '#';
+          for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        };
+    
+        openChartButton.addEventListener('click', updateChart);
+      </script>
+      <script>
+          // Encontra todos os botões dropdown
+          const dropdownButtons = document.querySelectorAll('.dropdown-toggle');
+        
+          // Adiciona um evento de clique a cada botão dropdown
+          dropdownButtons.forEach((button) => {
+            button.addEventListener('click', function () {
+              const dropdownMenu = this.nextElementSibling;
+              dropdownMenu.classList.toggle('show');
+            });
+          });
+        
+          // Fecha o dropdown quando um clique ocorrer fora dele
+          window.addEventListener('click', function (event) {
+            dropdownButtons.forEach((button) => {
+              const dropdownMenu = button.nextElementSibling;
+              if (!button.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.remove('show');
+              }
+            });
+          });
+      </script>
 </div>
 
 {% endblock %}
