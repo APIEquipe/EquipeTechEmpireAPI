@@ -22,4 +22,4 @@ Nesta Sprint o foco foi na integração do back-end com o front-end e na finaliz
 * As melhorias e os testes no sistema favorecem uma melhor experiência do usuário com o sistema desenvolvido.
 
 ## Funcionalidades desenvolvidas
-MVP (Gif/Video)
+![Video sprint 4](https://github.com/APIEquipe/EquipeTechEmpireAPI/assets/125694331/154afaf8-d5ef-4e97-9dfa-c343e5be52c9)
