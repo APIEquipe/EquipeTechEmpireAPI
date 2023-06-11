@@ -11,18 +11,25 @@
     <link rel="stylesheet" href="{{url_for ('static', filename='css/formas.css') }}">
 
 
-    {% block titulo %}{% endblock %}
+    {% block head %}{% endblock %}
 </head>
 {% block background %}{% endblock %}
     <header>
       <img class="logo" src="../static/img/logo.png" alt="logo">
       <nav>
-        <ul>
-          <li><a href="/">Página Inicial</a></li>
-          <li><a href="/consultar">Consultar</a></li>
-          <li><a href="/gastos">Gastos</a></li>
-          <li><a href="/sobre">Sobre</a></li>
-          <li><a href="/sugestao">Sugestão</a></li>
+        <ul style="display: flex; flex-direction: row;" >
+          <div id="homeLinkContainer">
+            <li><a href="/" id="homeLink">Página Inicial</a></li>
+          </div>
+          <div id="consultarLinkContainer">
+            <li><a href="/consultar" id="consultarLink">Consultar</a></li>
+          </div>
+          <div id="gastosLinkContainer">
+            <li><a href="/gastos" id="gastosLink">Gastos</a></li>
+          </div>
+          <div class="sobreLinkContainer">
+            <li><a href="/sobre" class="sobreLink">Sobre</a></li>
+          </div>
         </ul>
       </nav>
     </header>

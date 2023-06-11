@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 
-{% block titulo %}<title>Gastos</title>{% endblock %}
+{% block head %}
+<style>
+  #gastosLinkContainer{
+      background-color: white;
+      width: fit-content + 10px;
+      height: fit-content + 10px;
+  }
+  #gastosLink{
+      color: #4D6AAC;
+  }
+</style>
+<title>Gastos</title>
+{% endblock %}
 
 {% block background %}<body class="fundo" style="background: #f5f4f4;">{% endblock %}
 
@@ -11,29 +23,27 @@
         <div class="container_gastos">
             <div class="flexbox_filtro consultar">
                 <div class="consulta">
-                    <!-- <form id="form" action="/graficosgastos" method="get"> -->
-                        <h3 id="titulo-primario">Filtros</h3>
+                        <h3 id="titulo-primario">Filtro</h3>
                         <p>
                         <label for="processo" id="titulo-secundario">Processo:</label> <br>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Método
+                            
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownButton">
                             <a class="dropdown-item" type="button" onclick="updateValues('prodamb')">Prod. Ambulatorial</a>
                             <a class="dropdown-item" type="button" onclick="updateValues('trathipert')">Trat. Hipertensão</a>
-                            <!-- <a class="dropdown-item" type="button" onclick="updateValues('doenca')">Doença</a> -->
                             </div>
                         </div>
                         </p>
                         <p>
                         </p>
                         <p>
-                        <label for="periodo" id="titulo-secundario" >Período:</label> <br>
+                        <label for="periodo" id="titulo-secundario" >Anos:</label> <br>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="yearDropdownButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            Anos
+                            
                             </button>
                             <div class="dropdown-menu" aria-labelledby="yearDropdownButton">
                             <form id="yearForm">
@@ -62,11 +72,11 @@
                         </div>
                         </p>     
                         <p>
-                        <label for="cidade" id="titulo-secundario">Cidade:</label> <br>
+                        <label for="cidade" id="titulo-secundario">Cidades:</label> <br>
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="cityDropdownButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            Cidades
+                            
                             </button>
                             <div class="dropdown-menu" aria-labelledby="cityDropdownButton">
                             <form id="cityForm">
@@ -87,22 +97,16 @@
                         </div>
                         </p>
                         <div >
-                            <!-- class="filtro_botao" -->
-                            <button class="btn btn-success" id="openChartButton">Abrir Gráfico</button>
+                            <button class="btn btn-success" id="openChartButton">Gerar Gráfico</button>
                         </div>
-                    <!-- </form> -->
                 </div>
             </div>
         </div>
+      <div class="chart-container">
+        <canvas id="chart"></canvas>
+      </div>
     </div>
 
-    <div class="chart-container">
-        <canvas id="chart"></canvas>
-    </div>
-<!--         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
     </div>
 
     <script>
@@ -121,9 +125,6 @@
           selectedValueElement.textContent = option;
           variablesElement.textContent = JSON.stringify(variables[option], null, 2);
         }
-    
-    /*     yearDropdownButton.addEventListener('click', () => toggleDropdown(yearDropdownButton));
-        cityDropdownButton.addEventListener('click', () => toggleDropdown(cityDropdownButton)); */
     
         const chartData = {
           labels: [],
@@ -199,12 +200,7 @@
               cityData["Jacareí"] = [0, 522.12, 6023.17, 0, 0];
               cityData["São José dos Campos"] = [540, 5838, 6158, 3541, 0];
               cityData["Taubaté"] = [0, 837.91, 943.65, 4369.17, 0];
-            } /* else if (option === 'doenca') {
-              // Valores para Doença
-              cityData["Jacareí"] = [5, 10, 15, 20];
-              cityData["São José dos Campos"] = [10, 15, 20, 25];
-              cityData["Taubaté"] = [2, 4, 6, 8];
-            } */
+            }
             
             console.log(cityData);
           }
