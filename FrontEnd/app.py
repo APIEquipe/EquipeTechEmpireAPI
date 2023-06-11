@@ -31,27 +31,4 @@ def sobre():
 def info():
     return render_template("covid.html")
 
-@app.route("/graficos")
-def graficos():
-    return render_template("graficos.html") 
 
-@app.route("/graficosgastos")
-def graficosgastos():
-    return render_template("graficosgastos.html") 
-
-@app.route('/sugestao', methods=["GET", "POST"])
-def cadastro():
-    if request.method == "POST":
-        email = request.form['email']
-        assunto = request.form['assunto']
-        sugestao = request.form['sugestao']
-
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO contatos(email, assunto, sugestao) values (%s, %s, %s)", (email, assunto, sugestao))
-
-        mysql.connection.commit()
-
-        cur.close()
-
-        return render_template("sucesso.html")
-    return render_template("sugestao.html")
