@@ -52,19 +52,19 @@
                       </div>
                       <div class="dropdown-item">
                       <input type="checkbox" id="yearOption2" value="2020">
-                      <label for="yearOption1">2020</label>
+                      <label for="yearOption2">2020</label>
                       </div>
                       <div class="dropdown-item">
                       <input type="checkbox" id="yearOption3" value="2021">
-                      <label for="yearOption2">2021</label>
+                      <label for="yearOption3">2021</label>
                       </div>
                       <div class="dropdown-item">
                       <input type="checkbox" id="yearOption4" value="2022">
-                      <label for="yearOption3">2022</label>
+                      <label for="yearOption4">2022</label>
                       </div>
                       <div class="dropdown-item">
                       <input type="checkbox" id="yearOption5" value="2023">
-                      <label for="yearOption3">2023</label>
+                      <label for="yearOption5">2023</label>
                       </div>
                   </form>
                   </div>
@@ -143,42 +143,52 @@
           "Taubaté": [0, 0, 0, 0, 0]
           };
   
-      let updateChart = () => {
-          const yearForm = document.getElementById('yearForm');
-          const cityForm = document.getElementById('cityForm');
-          const selectedYears = Array.from(yearForm.elements)
-              .filter((element) => element.checked)
-              .map((element) => element.value);
+          let updateChart = () => {
+                    const yearForm = document.getElementById('yearForm');
+                    const cityForm = document.getElementById('cityForm');
   
-          const selectedCities = Array.from(cityForm.elements)
-              .filter((element) => element.checked)
-              .map((element) => element.value);
-          
-        chartData.labels = selectedYears;
-        chartData.datasets = selectedCities.map((city) => {
-          const color = getRandomColor();
-          const data = cityData[city];
+  // Mapeia os valores dos elementos selecionados no ano
+                    const selectedYearsValues = Array.from(yearForm.elements)
+                        .filter((element) => element.checked)
+                        .map((element) => parseInt(element.value));
+        
+  // Obtém somente os anos selecionados começando de "2019"
+                    const selectedYearsIndices = selectedYearsValues.map((value) => value - 2019);
   
-          return {
-            label: city,
-            data: data,
-            backgroundColor: color,
-            borderColor: color,
-            borderWidth: 1
-          };
-        });
-  
-        if (chartCanvas.chart) {
-          chartCanvas.chart.data = chartData;
-          chartCanvas.chart.update();
-        } else {
-          chartCanvas.chart = new Chart(chartCanvas, {
-            type: 'bar',
-            data: chartData,
-            options: chartOptions
-          });
-        }
-      };
+                    const selectedCities = Array.from(cityForm.elements)
+                        .filter((element) => element.checked)
+                        .map((element) => element.value);
+
+                    chartData.labels = selectedYearsValues;
+   
+                    chartData.datasets = selectedCities.map((city) => {
+                    const color = getRandomColor();
+     
+     // Filtra somente os dados dos anos selecionados para cada cidade
+                    let filteredCityDataByYearIndices= [];
+                        for(let i=0; i<selectedYearsIndices.length; ++i){
+                            let index=selectedYearsIndices[i];
+                             filteredCityDataByYearIndices.push(cityData[city][index]);
+                    }
+       
+                    return {
+                        label: city,
+                        data: filteredCityDataByYearIndices,
+                        backgroundColor: color,
+                        borderColor: color,
+                        borderWidth: 1
+                    };
+   });
+
+ if (chartCanvas.chart) {
+   chartCanvas.chart.data = chartData;
+   chartCanvas.chart.update();
+ } else { 
+   chartCanvas.chart =
+        new Chart(chartCanvas, { type:
+            'bar', data:chartData,options :chartOptions });
+ }
+};
   
       document.querySelectorAll('.dropdown-item').forEach(item => {
           item.addEventListener('click', function(event) {
